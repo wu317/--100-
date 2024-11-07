@@ -4,12 +4,10 @@ int main()
     double lirun = 0;
     double ticheng = 0;
     int i = 0;
-    long int j = 0;
-    printf("ÇëÊäÈëÀûÈó:\n");
+    printf("è¯·è¾“å…¥åˆ©æ¶¦:\n");
     scanf("%lf",&lirun);
     i = (int)(lirun/100000);
-    j = (long int)lirun;
-    if((j % 100000) != 0)
+    if((i%100000) != 0)
         i++;
     switch(i)
     {
@@ -35,10 +33,10 @@ int main()
             ticheng = 0.1*100000+0.075*100000+0.05*200000+0.03*200000-0.01*(lirun - 600000);
             break;   
         default:
-            printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
+            printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
         
     }
-    printf("µ±ÊäÈëµÄÀûÈóÎª:%lfÊ±,Ìá³ÉÎª:%lf\n",lirun,ticheng);
+    printf("å½“è¾“å…¥çš„åˆ©æ¶¦ä¸º:%lfæ—¶,ææˆä¸º:%lf\n",lirun,ticheng);
 
     return 0;
 }
